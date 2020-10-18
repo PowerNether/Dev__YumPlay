@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YumPlay</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container__header">
+
+                <!-- Навигационное меню -->
+                <div class="header__menu">
+                    <nav>
+                        <a href="#">ГЛАВНАЯ</a>
+                        <a href="#">ФОРУМ</a>
+                        <a href="#">ПРАВИЛА</a>
+                        <a href="#">ДОНАТ</a>
+                        <a href="#">БАН-ЛИСТ</a>
+                        <a href="#">МАГАЗИН</a>
+                    </nav>
+                </div>
+                <!-- Кнопка "PLAY" -->
+                <div class="header__play">
+                    <a href="#">PLAY</a>
+                </div>
+
+            </div>
+        </header>
+        <section>
+            <div class="container__main">
+
+                <!-- Блок для новостей? -->
+                <div class="main__news">
+
+                </div>
+
+                <!-- Блок с авторизацией и остальной частью -->
+                <div class="main__sub-menu">
+                    <div class="sub-menu__auth">
+                        <div class="auth__title">
+                            <p>Авторизация</p>
+                            <img src="image/authicon.png">
+                        </div>
+                        <form action="">
+                            <input type="login" placeholder="GGwM">
+                            <input type="pass" placeholder="****************">
+                            <input type="checkbox" name="rem">
+                            <label for="rem">Не выходить</label>
+                            <button type="submit">Войти в аккаунт</button>
+                        </form>
+                        <div class="auth__link">
+                            <a href="#">ЗАБЫЛИ ПАРОЛЬ</a>
+                            <a href="#">РЕГИСТРАЦИЯ</a>
+                        </div>
+                    </div>
+                    <div class="sub-menu__monitoring">
+                        <div class="monitoring__title">
+                            <p>Монтиторинг</p>
+                            <img src="image/monitoringicon.png">
+                        </div>
+                        <div class="monitoring__server">
+                            <div class="server__name">
+                                <p>Hi-Tech</p>
+                                <p>60/100</p>
+                            </div> 
+                            <progress value="60" max="100"></progress>
+                        </div>
+                        <div class="monitoring__server">
+                            <div class="server__name">
+                                <p>Magic</p>
+                                <p>60/100</p>
+                            </div> 
+                            <progress value="60" max="100"></progress>
+                        </div>
+                        <div class="monitoring__server">
+                            <div class="server__name">
+                                <p>SkyBlock</p>
+                                <p>60/100</p>
+                            </div> 
+                            <progress value="60" max="100"></progress>
+                        </div>
+                        <div class="monitoring__all">
+                            <h2>Общий онлайн</h2>
+                            <p>180</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="sub-menu__discord">
+                        <iframe src="https://discordapp.com/widget?id=506900300209324052&theme=dark" width="315" height="358" allowtransparency="true" frameborder="0"></iframe>
+                    </div>
+                    <div class="sub-menu__bg"></div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="container__footer">
+
+                <div class="footer__desk">
+                    <h2>© 2020 YumPlay</h2>
+                    <p>Любое копирование информации и/или элементов сайта запрещено. Официальная группа ВКонтакте: <span>vk.com/yumplay</span></p>
+                </div>
+
+                <div class="footer__design">
+                    <h2>Designed by <span>DEViANCE</span></h2>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="onTop">
+            <div class="onTop-Up">
+                <p>ВВЕРХ!</p>
+            </div>
+            <div class="onTop-Arrow">
+                <a href="#"><img src="image/Vector.png"></a>
+            </div>
+        </div>
+        <div class="coockie" id="closeCoockie">
+            <img src="image/coockie.png">
+            <p>Мы используем файлы cookie и другие технологии отслеживания, чтобы улучшить вашу навигацию на нашем веб-сайте, показать вам персонализированный контент и целевую рекламу, проанализировать трафик нашего веб-сайта и понять, откуда приходят наши посетители. Просматривая наш веб-сайт, вы соглашаетесь на использование нами файлов cookie и других технологий отслеживания.</p>
+            <button onclick="closeCoockie()">Я согласен</button>
+        </div>
+        <script>
+            function closeCoockie() {
+                document.getElementById("closeCoockie").style.display = 'None';
+            }
+            (function() {
+              'use strict';
+
+              function trackScroll() {
+                var scrolled = window.pageYOffset;
+                var coords = document.documentElement.clientHeight;
+
+                if (scrolled > coords) {
+                  goTopBtn.classList.add('onTop-Arrow-show');
+                  goTopUp.classList.add('onTop-Arrow-show');
+                }
+                if (scrolled < coords) {
+                  goTopBtn.classList.remove('onTop-Arrow-show');
+                  goTopUp.classList.remove('onTop-Arrow-show');
+                }
+              }
+
+              function backToTop() {
+                if (window.pageYOffset > 0) {
+                  window.scrollBy(0, -80);
+                  setTimeout(backToTop, 0);
+                }
+              }
+
+              var goTopBtn = document.querySelector('.onTop-Arrow');
+              var goTopUp = document.querySelector('.onTop-Up');
+
+              window.addEventListener('scroll', trackScroll);
+              goTopBtn.addEventListener('click', backToTop);
+            })();
+        </script>
+    </body>
+</html>

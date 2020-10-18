@@ -1,0 +1,420 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Сайт */
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: url(../image/background.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	padding: 100px 0 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+/* Шапка сайта */
+.container__header {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+}
+.header__menu {
+	width: 850px;
+	height: 95px;
+	background: url(../image/menu-3d.png) no-repeat center;
+	background-size: cover;
+	padding: 0 0 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header__menu nav a {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin: 0 14px;
+	padding: 0 0 4px;
+	text-decoration: none;
+	position: relative;
+}
+.header__menu nav a:after {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background: #F774FF;
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+}
+.header__play {
+	width: 350px;
+	height: 110px;
+	background: url(../image/play-3d.png) no-repeat center;
+	background-size: cover;
+	padding: 0 0 11px 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header__play a {
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 59px;
+	letter-spacing: 0.15em;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: -3px -3px 5px rgba(255, 255, 255, 0.38);
+}
+/* Основаная часть сайта */
+.container__main {
+	width: 1100px;
+	height: 2553px;
+	margin: 0 auto;
+	display: flex;
+}
+.main__news {
+	width: 715px;
+	height: 2553px;
+	background: url(../image/news.png) no-repeat center;
+	background-size: cover;
+	padding: 61px 0;
+}
+.main__sub-menu {
+	width: 385px;
+	height: 2553px;
+	padding: 40px;
+	background: #353D5C;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.sub-menu__auth {
+	background: url(../image/background_submenu.png) no-repeat center;
+	background-size: cover;
+	width: 321px;
+	height: 408px;
+	box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.auth__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 5px 18px;
+}
+.auth__title p {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 10px #F774FF;
+	font-family: 'PT Sans', sans-serif;
+}
+.auth__title img {
+	width: 31px;
+	height: 100%;
+}
+.sub-menu__auth form {
+	padding-top: 32px;
+	margin-left: 15px;
+	width: 274px;
+}
+.sub-menu__auth form input[type=login],
+.sub-menu__auth form input[type=pass] {
+	padding-left: 17px;
+	margin-top: 18px;
+	width: 274px;
+	height: 40px;
+	background: #fff;
+	border-radius: 3px;
+	border: none;
+}
+.sub-menu__auth form input[type=checkbox] {
+	margin-top: 24px;
+}
+
+.sub-menu__auth form label {
+	color: #CBCFD4;
+	font-size: 14px;
+}
+.sub-menu__auth form button {
+	background: url(../image/authbutton.png) no-repeat center;
+	background-size: cover;
+	border: none;
+	width: 290px;
+	height: 60px;
+	margin-top: 24px;
+	padding-bottom: 11px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 10px #F774FF;
+}
+.auth__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 30px;
+}
+.auth__link a {
+	color: #FFFFFF;
+	font-size: 11px;
+	padding-bottom: 4px;
+	position: relative;
+	text-decoration: none;
+}
+.auth__link a:after {
+	content: " ";
+	width: 100%;
+	height: 2px;
+	background: #F774FF;
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+}
+.sub-menu__monitoring {
+	background: url(../image/background_submenu.png) no-repeat top;
+	background-size: cover;
+	width: 321px;
+	height: 336px;
+	margin-top: 40px;
+	box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.monitoring__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 5px 18px 11px;
+}
+.monitoring__title p {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 10px #F774FF;
+	font-family: 'PT Sans', sans-serif;
+}
+.monitoring__title img {
+	width: 31px;
+	height: 100%;
+}
+.monitoring__server {
+	margin-left: 3px;
+	padding: 19px 13px;
+	border-bottom: 2px solid #ED785F;
+	width: 315px;
+}
+.monitoring__server progress {
+	width: 100%;
+	height: 6px;
+	border-radius: 3px;
+}
+.monitoring__server progress::-webkit-progress-value {
+	background: linear-gradient(90deg, #F27A54 -11.55%, #A154F2 174.87%);
+	border-radius: 3px;
+}
+.monitoring__server progress::-webkit-progress-bar {
+	background: #747D88;
+	border-radius: 3px;
+}
+.server__name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #CBCFD4;
+	font-size: 14px;
+	line-height: 22px;
+}
+.monitoring__all {
+	height: 60px;
+	padding: 10px 0;
+	background: #36393F;
+	text-align: center;
+}
+.monitoring__all h2 {
+	font-size: 14px;
+	line-height: 22px;
+	color: #CBCFD4;
+}
+.monitoring__all p {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-shadow: 0px 0px 10px #F774FF;
+	color: #fff;
+}
+.sub-menu__discord {
+	margin: 40px 0;
+}
+.sub-menu__bg {
+	background: url(../image/clear-bg__sub-menu.png) no-repeat center;
+	background-size: cover;
+	width: 321px;
+	height: 354px;
+}
+/* Подвал сайта */
+.container__footer {
+	width: 1200px;
+	height: 93px;
+	margin: 0 auto;
+	background: url(../image/footer-3d.png) no-repeat center;
+	background-size: cover;
+	padding: 11px 40px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__desk {
+	max-width: 456px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	color: #B9BBBE;
+}
+.footer__desk p {
+	color: #B9BBBE;
+}
+.footer__desk h2 {
+	color: #fff;
+}
+.footer__desk span {
+	color: #f27a54;
+}
+.footer__design {
+	
+}
+.footer__design h2 {
+	font-weight: 600;
+	font-size: 14px;
+	color: #fff;
+	line-height: 18px;
+}
+.footer__design span {
+	font-weight: 600;
+	font-size: 14px;
+	color: #f27a54;
+}
+
+.onTop {
+	position: fixed;
+	right: 70px;
+	bottom: 150px;
+	display: flex;
+	align-items: center;
+}
+.onTop-Up {
+	width: 230px;
+	height: 60px;
+	background: url(../image/on-top.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	left: -220px;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+	color: #FFFFFF;
+	opacity: 0;
+	transition: all .5s;
+}
+.onTop-Arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75px;
+	height: 75px;
+	background: url(../image/Rectangle1.png) no-repeat center;
+	background-size: cover;
+	z-index: 2;
+	transition: all .5s;
+	opacity: 0;
+}
+.onTop-Arrow-show {
+	opacity: 1;
+}
+
+.coockie {
+	width: 1500px;
+	height: 100px;
+	background: url(../image/bg-coockie.png) no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 65px;
+	position: fixed;
+	bottom: 20px;
+	left: 10%;
+}
+.coockie button {
+	width: 226px;
+	height: 60px;
+	background: #F27A54;
+	box-shadow: -1px -1px 0px rgba(180, 112, 31, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 0px;
+	border: none;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+}
+.coockie p {
+	max-width: 933px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
